@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/download")
 public class FileDownloadController {
-    private final DownloadService downloadService;
+    private final FileDownloadService downloadService;
 
     @PostMapping
     public String fileDownload(@RequestParam("urls")List<String> urls,

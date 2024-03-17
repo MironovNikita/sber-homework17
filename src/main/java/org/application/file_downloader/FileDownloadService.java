@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 @Service
-public class DownloadService {
+public class FileDownloadService {
     public void downloadFiles(List<String> urls, String directory, int maxThreads, int speedLimit) {
         ExecutorService executor = Executors.newFixedThreadPool(maxThreads);
         WebClient webClient = WebClient.builder().build();

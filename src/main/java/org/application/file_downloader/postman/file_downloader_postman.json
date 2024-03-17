@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "872793f9-38b8-42e5-8663-f3e00f5b05f4",
+		"name": "HW17",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26253290"
+	},
+	"item": [
+		{
+			"name": "Загрузка файлов по url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "urls",
+							"value": "https://tiniatov.ru/wp-content/uploads/c/a/b/cab466aa3eb8325e9ef78a9935ad56c3.png,https://cdn-icons-png.flaticon.com/512/1183/1183618.png,https://cdn.coursehunter.net/category/java.png,https://cdn3.iconfinder.com/data/icons/developer-files-2-add-on/48/v-35-1024.png,https://tiniatov.ru/wp-content/uploads/a/f/c/afc39d2488aaf2a9c242ca3d23a128dd.png,https://www.shareicon.net/download/2015/09/25/107068_development_512x512.png",
+							"type": "text"
+						},
+						{
+							"key": "directory",
+							"value": "src/main/java/org/application/file_downloader/downloads",
+							"type": "text"
+						},
+						{
+							"key": "maxThreads",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "speedLimit",
+							"value": "500",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
